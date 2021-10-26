@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf8">
+        <title style="text-align: center">Formulário de cadastro de cliente</title>
+       <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+      
+        <form class="box">
+            
+
+            <div>
+                <h1><strong>Cadastro de cliente</strong></h1>
+                    <p>Complete suas informações</p>
+            
+                 <fieldset>
+                    <legend><strong>Dados Pessoais </strong></legend>
+                    
+                    
+                    <div class="inputBox"> 
+                        <input type="text" name="nome" id="nome" class="inputuser" autofocus required>
+                        <label for="nome" class="labelinput"><strong>Nome<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="sobrenome" id="sobrenome" class="inputuser" required>
+                        <label for="sobrenome" class="labelinput"><strong>Sobrenome<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div >
+                        <label  name="data_de_nascimento"required><strong>Data de nascimento</strong></label><br>
+                        <input class="input_section" type="date" id="nascimento"><label style="color: red;" >*</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="idade" id="idade" maxlength="2" class="inputuser" required>
+                        <label for="idade" class="labelinput"><strong>Idade<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label><strong> Pessoa Física ou Jurídica?</strong></label>
+                       <select class="input_section" name="pessoa" id="pessoa">
+                           <option value="selecionar" selected disabled>Selecione</option>
+                           <option value="pessoa_fisica">Pessoa Física</option>
+                           <option value="pessoa_juridica">Pessoa Jurídica</option>
+                       </select>
+                      
+
+                    </div>
+                    <br>
+                    <div>
+                        <label><strong>Sexo:</strong></label>
+                            <select class="input_section" name="Sexo" id="sexo" required> 
+                                <option selected disabled value=""> Selecione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select><label style="color: red;" >*</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="cpf" id="cpf" class="inputuser" required>
+                        <label for="cpf" class="labelinput"> <strong>CPF/ CNPJ</strong><label style="color: red;" >*</label></label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="rg" id="rg" class="inputuser" required>
+                        <label for="rg" class="labelinput"><strong>RG</strong><label style="color: red;" >*</label></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label><strong> Estado Civil </strong></label>
+                        <select class="input_section" name="estado civil" id="estado_civil">
+                            <option selected disabled value=""> Selecione</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                        </select><label style="color: red;" >*</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="tel" name="residencial" id="residencial" class="inputuser" required >
+                        <label for="residencial" class="labelinput"><strong> Telefone Residencial<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="tel" name="celular" id="celular" class="inputuser" required />
+                        <label for="celular" class="labelinput"><strong> Telefone Celular<label style="color: red;" >*</label></label></strong>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputuser" required/>
+                        <label for="email" class="labelinput"><strong> Email<label style="color: red;" >*</label></strong></label>
+                    </div>
+                   
+                </fieldset>
+
+                <hr />
+
+                <fieldset>
+                    <legend><strong>Endereço de Cobrança e Entrega</strong></legend>
+                    <div class="inputBox">
+                        <input type="text" name="cep" id="cep" class="inputuser" required> 
+                        <label for="cep" class="labelinput"><strong>CEP<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                     <div class="inputBox">
+                        <input type="email" name="email" id="endereco" class="inputuser" required/>
+                        <label for="endereco" class="labelinput"><strong>Endereço<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="numero" id="numero" class="inputuser" required/>
+                        <label for="numero" class="labelinput"><strong>Número<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="complemento" id="complemento" class="inputuser" required/>
+                        <label for="complemento" class="labelinput"><strong>Complemento<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div >
+                        <label><strong>UF:</strong></label>
+                        <select class="input_section" name="UF" id="uf">
+                            <option selected disabled value=""> UF</option>
+                            <option value="acre">AC</option>
+                            <option value="alagoas">AL</option>
+                            <option value="amapa">AP</option>
+                            <option value="bahia">BA</option>
+                            <option value="ceara">CE</option>
+                            <option value="distrito federal">DF</option>
+                            <option value="espirito santo">ES</option>
+                            <option value="goias">GO</option>
+                            <option value="maranhao">MA</option>
+                            <option value="mato grosso do sul">MS</option>
+                            <option value="mato grosso">MT</option>
+                            <option value="minas gerais">MG</option>
+                            <option value="para">PA</option>
+                            <option value="paraiba">PB</option>
+                            <option value="pernambuco">PE</option>
+                            <option value="piaui">PI</option>
+                            <option value="parana">PR</option>
+                            <option value="rio de janeiro">RJ</option>
+                            <option value="rio grande do norte">RN</option>
+                            <option value="rondonia">RO</option>
+                            <option value="roraima">RR</option>
+                            <option value="rio grande do sul">RS</option>
+                            <option value="santa catarina">SC</option>
+                            <option value="sergipe">SE</option>
+                            <option value="sao paulo">SP</option>
+                            <option value="tocantins">TO</option>
+                        </select><label style="color: red;" >*</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="municipio" id="municipio" class="inputuser" required/>
+                        <label for="municipio" class="labelinput"><strong>Município<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="bairro" id="bairro" class="inputuser" required/>
+                        <label for="bairro" class="labelinput"><strong>Bairro<label style="color: red;" >*</label></strong></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label><strong> O endereço de cobrança é o mesmo do endereço de entrega? </strong></label><label style="color: red;" >*</label><br/>
+                        <!-- <textarea name="resposta" id="resposta" cols="20" rows="1" placeholder=" Sim ou Não. "></textarea> -->
+                        <label>
+                        <input type="radio" name="confirmacao_endereco" value="sim" checked> Sim
+                        </label>
+                        <label>
+                        <input type="radio" name="confirmacao_endereco" value="nao"> Não
+                        </label>
+                    </div>
+                    <div>
+                        <label ><strong> Deixe aqui sua sugestão para a nossa marca:</strong></label><br>
+                        <Textarea class="input_section" cols="50" rows="5" name="sugestões"></Textarea>
+                    </div>
+                    
+                </fieldset>
+           
+            
+            <input id="submit" type="submit" value="Confirmar">
+            <input id="reset" type="reset" value="Limpar">
+            <br>
+            
+        </form>
+
+       
+       
+    </body>
+        <footer>
+            <h4>Nomes - matrículas dos integrantes:</h4>
+                <ol>
+                    <li>Kaio Vinicius Almeida Mendes - 202103282806</li>
+                    <li>Lucas Guilherme Lima da Silva - 202102011027</li>
+                    <li>Mark Bryan Meiras Fernandes - 202102010977</li>
+                    <li>Sarah Camila Lima - 202103695841</li>
+                </ol>
+        </footer>
+
+</html>
