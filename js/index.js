@@ -26,3 +26,14 @@ const botao_sub = document.querySelector('.botao_sub')
         input_result.innerHTML = `${sub}`
     })
 
+const botao_mult = document.querySelector('.botao_mult')
+    botao_mult.addEventListener('click', () => {
+        let mult = value_1 * value_2
+        input_result.innerHTML = `${mult}`
+    })
+const botao_div = document.querySelector('.botao_div')
+    botao_div.addEventListener('click', () => {
+        let div = value_1 / value_2
+        input_result.innerHTML = `${div}`
+    })
+
